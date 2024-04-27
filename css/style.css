@@ -29,7 +29,12 @@ a:hover {
 .no-result, .search-bar-wrapper {
     padding: var(--padding-size-md);
     border: var(--border-width) solid var(--border-color);
-    background-color: #fff
+    background-color: #fff;
+    width: 100%;
+}
+
+input {
+    width: 100%;
 }
 
 .app-loader {
@@ -60,3 +65,68 @@ a:hover {
     margin: 20px;
 }
 
+.result-wrapper {
+    margin-top: 32px;
+    width: 100%;
+}
+
+.album-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+ul {
+    display: flex;
+    padding: var(--padding-size-md);
+    margin: 8px;
+    border: var(--border-width) solid var(--border-color);
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+.album-details:hover {
+    background-color: var(--background-color)
+}
+
+.album-details:hover .album-img {
+    filter: brightness(.8)
+}
+
+.album-info {
+    align-self: stretch;
+    width: 100%;
+    max-width: var(--max-album-width);
+    display: grid;
+}
+
+.album-artist {
+    font-size: 1rem;
+    line-height: 1.25;
+    white-space: normal;
+}
+
+.album-img{
+    object-fit: contain;
+    min-width: var(--min-album-width);
+}
+
+.album-img-link {
+    display: block;
+    max-height: var(--max-album-width);
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+li {
+    flex: 16.33%;
+    list-style: none;
+    margin: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+    .li {
+      width: 33.333333333%;
+    }
+  }
+  
