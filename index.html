@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <title>Last FM Project</title>
+    <link
+      rel = "stylesheet"
+      href = "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <div class="app-wrapper">
+        <div class="search-bar-wrapper">
+            <input id="searchbar"
+              onkeyup="searchAlbum(this)"
+              type="text" 
+              name="search"
+              placeholder="Search albm.."/>
+        </div>
+
+        <div class="result-wrapper">
+            <div class="app-loader"></div>
+            <div class="no-result"> Search for results </div>
+            <ul id="albums" class="album-list">
+                <!--  search results go here  (js insert)   -->
+            </ul>
+        </div>
+
+
+    </div>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
